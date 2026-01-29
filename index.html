@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio QR</title>
+</head>
+<body style="background:black;color:white;display:flex;justify-content:center;align-items:center;height:100vh;font-size:2em;text-align:center;cursor:pointer;">
+  TOCA PARA ESCUCHAR 🔊
+
+  <audio id="audio">
+    <source src="que-calor-video-clip.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script>
+    document.body.addEventListener('click', () => {
+      const audio = document.getElementById('audio');
+      audio.play();
+    });
+  </script>
+</body>
+</html>
